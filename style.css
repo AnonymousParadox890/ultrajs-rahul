@@ -1,0 +1,544 @@
+body {
+  background: #363940;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #23232D;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.list-item {
+  color: white;
+  position: relative;
+  padding: 14px 16px;
+  left: -7%;
+  transition: 0.1s linear;
+}
+
+.list-item:hover {
+  color: aqua;
+  background: #141318;
+
+}
+
+.card {
+  flex-basis: 70%;
+  z-index: 3;
+  background: #363940;
+  border-radius: 15px;
+  width: 100%;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: 0.3s linear;
+}
+
+.card:hover {
+  transform: translateY(10px);
+}
+
+.card-title {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('rahul.jpg');
+  background-size: cover;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)
+}
+
+.sel {
+  width: 70px;
+  height: 75px;
+  border-radius: 50%;
+  border: 10px solid #363940;
+  position: relative;
+  left: -27%;
+  top: -60px;
+}
+
+#name {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 25px;
+  position: relative;
+  left: -27%;
+  bottom: 16%;
+  color: white;
+}
+
+.fname {
+  position: relative;
+  left: -27%;
+  bottom: 60%;
+  color: white;
+  opacity: 0.7;
+}
+
+.fline {
+  width: 30%;
+  height: 1px;
+  background: grey;
+  position: relative;
+  left: 8%;
+  bottom: 15%;
+}
+
+.cardin {
+  width: 50%;
+  height: 220px;
+  position: relative;
+  left: 50%;
+  bottom: 30%;
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  background: #23232D;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.cardin h4 {
+  position: relative;
+  top: 10%;
+  padding: 2px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#slo {
+  width: 25%;
+  height: 50px;
+  position: relative;
+  top: 15%;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.line {
+  width: 70%;
+  background: grey;
+  height: 1px;
+  position: relative;
+  left: 15%;
+  bottom: -30px;
+}
+
+#ul {
+  list-style: none;
+  position: relative;
+  left: -10%;
+  top: 20%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.dis:hover {
+  color: #5865F1;
+  transition: 0.1s linear;
+}
+
+.insta:hover {
+  opacity: 0.4;
+  transition: 0.1s linear;
+}
+
+.fb:hover {
+  color: #0D8CF0;
+  transition: 0.1s linear;
+}
+
+body.light-mode {
+  background: white;
+  color: black;
+}
+
+.light-mode .list {
+  background: white;
+  z-index: 5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.light-mode .list-item {
+  color: grey;
+  background: white;
+}
+
+.light-mode .list-item:hover {
+  color: black;
+  background: #F5F5F5;
+}
+
+.light-mode .card {
+  background: white;
+}
+
+.light-mode .fname {
+  color: black;
+}
+
+.light-mode #name {
+  color: black;
+}
+
+.light-mode .sel {
+  border: 10px solid white;
+}
+
+.light-mode .cardin {
+  background: #F5F5F5;
+  color: black;
+}
+
+.light-mode #ul {
+  color: black;
+}
+
+#show_bg_2 {
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(0, 0, 0, 0.8)),
+    url('instablack.jpg');
+  width: 90%;
+  height: 480px;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+#hi {
+  position: relative;
+  top: -160px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+.light-mode #show_bg_2 {
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(0, 0, 0, 0.8)),
+    url('instawhite.jpg');
+}
+
+nav {
+
+  padding: 20px;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #000;
+  overflow-y: hidden;
+
+}
+
+/*
+        .header {
+            height: 50px;
+        }
+*/
+.icon {
+  width: 50px;
+  height: 75px;
+  z-index: 2;
+  position: fixed;
+  top: 30px;
+}
+
+.bar-1,
+.bar-2 {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 7px;
+  transition: 500ms;
+}
+
+.change-1 {
+  transform: rotate(45deg) translateY(13px) translateX(3px);
+}
+
+.change-2 {
+  transform: rotate(-45deg) translateX(-6px) translateY(-3px);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -5px;
+}
+
+.links {
+  z-index: 3;
+  height: 0vh;
+  margin: 0 auto;
+  position: relative;
+  top: 15vh;
+  -webkit-tap-highlight-color: black;
+  transition: 1s;
+}
+
+a,
+a:focus,
+a:visited {
+  font-family: sans-serif;
+  font-size: 23px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  margin-bottom: 20px;
+
+}
+
+.display {
+  height: 100vh;
+}
+
+.carda {
+  height: 370px;
+  width: 90%;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  background: #F7F7F7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.cardaa {
+  height: 340px;
+  z-index: 2;
+  position: relative;
+  left: 25px;
+  top: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  opacity: 0.7;
+
+  width: 85%;
+}
+
+.carda img {
+  width: 80%;
+  height: 320px;
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+  top: -320px;
+}
+
+#animt {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 3;
+  font-weight: 1000;
+  position: relative;
+  bottom: 190px;
+}
+
+.animate {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .list {
+    width: 90%;
+    left: 3%;
+  }
+
+  .list-item {
+    left: -3%;
+  }
+
+  .card {
+    height: 700px;
+  }
+
+  .cardin {
+    top: -17%;
+    height: 350px;
+  }
+
+  #ul {
+    left: -4%;
+  }
+
+  .sel {
+    top: -70px;
+    width: 10%;
+    height: 100px;
+
+  }
+
+  #name {
+    top: -12%;
+  }
+
+  #slo {
+    height: 120px;
+    top: 40px;
+  }
+
+  .fline {
+    top: -5%;
+  }
+
+  .fname {
+    top: -50%;
+  }
+
+  .carda {
+    height: 750px;
+    width: 95%;
+    position: relative;
+
+  }
+
+  .cardaa {
+    width: 90%;
+    height: 730px;
+  }
+
+  .carda img {
+    height: 710px;
+    position: relative;
+    top: -700px;
+  }
+
+  #animt {
+    bottom: 350px;
+  }
+}
+
+#chnzz .brightness {
+  display: none;
+}
+
+.light-mode #chnzz .moon {
+  display: none;
+}
+
+.light-mode #chnzz .brightness {
+  display: block;
+}
+
+.triangle-up {
+  width: 200px;
+  z-index: 5;
+  position: relative;
+  top: -610px;
+  left: -140px;
+  height: 200px;
+  background: black;
+  transform: rotateZ(135deg);
+  border: 1px solid red;
+
+
+}
+#chnz{
+  padding:10px;
+  fill:white;
+}
+.light-mode #chnz{
+  fill:grey;
+}
+#beta{
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  height:30px;
+  width:50px;
+  border-radius:40px;
+  color:white;
+  text-align: center:
+}
+#beta p{
+  position: relative;
+  top:5px;
+}
+#inputab{
+  width:150px;
+  position: relative;
+  top:-53px;
+  text-align: center;
+  background: transparent;
+  color:white;
+  border:2px solid #23232D;
+  border-radius:10px;
+  outline: none;
+  transition: width .35s ease-in-out;
+}
+#inputab:hover{
+  width:200px;
+  border-radius:5px;
+}
+#submitab{
+  position: relative;
+  top:-40px;
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  border: 0px solid #23232D;
+  background: transparent;
+  outline: none;
+}
+#card-about{
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  height:500px;
+  width:100%;
+  border-radius:20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#card-aboutt{
+  background: #363940;
+  height:480px;
+  width:95%;
+  position: relative;
+  left:2.5%;
+  top:2%;
+  border-radius:20px;
+}
+#stand{
+  height:70px;
+  width:70px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  top:-450px;
+}
+#animatediss{
+  position: relative;
+  top:-450px;
+  color:white;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Work Sans', sans-serif;
+}
+#cardabbtt{
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  height:260px;
+  width: 90%;
+  position: relative;
+  top:-450px;
+  left:5%;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
