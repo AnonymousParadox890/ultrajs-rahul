@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Meow+Script&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Raleway&family=Roboto+Mono:ital,wght@1,200&family=Source+Code+Pro:wght@300&family=Twinkle+Star&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Meow+Script&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Raleway&family=Roboto+Mono:ital,wght@1,200&family=Source+Code+Pro:wght@300&family=Twinkle+Star&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <div id="beta">
+    <p>beta</p>
+  </div>
+  <input onkeyup="searchbar(event)" type="text" name="" id="inputab" value="" placeholder="Navigate Pages"/>
+  <button onclick="openPage()" id="submitab" type="submit">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="40" height="40"
+viewBox="0 0 48 48"
+style=" fill:#000000;"><path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path><path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path><path fill="#37474F" d="M36.2 32.1H40.2V44.400000000000006H36.2z" transform="rotate(-45.001 38.24 38.24)"></path><path fill="#64B5F6" d="M20 7A13 13 0 1 0 20 33A13 13 0 1 0 20 7Z"></path><path fill="#BBDEFB" d="M26.9,14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2,1.2-6.9,3.2c-0.4,0.4-0.3,1.1,0.1,1.4c0.4,0.4,1.1,0.3,1.4-0.1C16,13.9,17.9,13,20,13s4,0.9,5.4,2.5c0.2,0.2,0.5,0.4,0.8,0.4c0.2,0,0.5-0.1,0.6-0.2C27.2,15.3,27.2,14.6,26.9,14.2z"></path></svg>
+  </button>
+  <br />
+  <div id="card-about">
+    <div id="card-aboutt">
+    </div>
+    <img id="stand" src="rastand.jpg" alt="" />
+    <h1><span id="animatediss">Rahul Raj</span></h1>
+    <div id="cardabbtt">
+      <h5 style="padding: 10px">Hi,</h5>
+      <h3 style="padding: 5px;font-weight:800"><span id="animatedis"></span></h3>
+      <h5 style="padding: 5px;">I'm an 🇮🇳 Indian designer who loves creating digital products.</h5>
+    </div>
+  </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+    <script>
+      var typed = new Typed('#animatedis', {
+      strings: ["I build value through design.","I build value through innovation."],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+      });
+    </script>
+    </div>
+  </body>
+
+</html>
