@@ -76,7 +76,7 @@ const openPage = () => {
       showCancelButton: false,
       confirmButtonText: 'Show Pages Name List',
       denyButtonText: `Cancel`,
-      footer: "<a style='color:lightblue' href='https://time.is/'>" + new Date().toLocaleString('en-us', { weekday: 'long' }) + " (" + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + ")</a>",
+      footer: "<a style='color:lightblue;text-decoration:none;' href='https://time.is/'>" + new Date().toLocaleString('en-us', { weekday: 'long' }) + " (" + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + ")</a>",
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
