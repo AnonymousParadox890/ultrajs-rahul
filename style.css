@@ -89,7 +89,6 @@ body {
   justify-content: center;
   color: white;
   background-size: 400% 400%;
-	
   font-family: 'Montserrat', sans-serif;
   animation: gradient 10s ease infinite;
 }
