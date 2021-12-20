@@ -54,6 +54,13 @@ const openPage = () => {
     input.equalsIgnoreCase("apple page")
   )
     window.location.href = "https://anonymousparadox890.github.io/rahul-raj/apple.html"
+  else if(
+    input.equalsIgnoreCase("Particle")||
+    input.equalsIgnoreCase("particle page")||
+    input.equalsIgnoreCase("particle style page")||
+    input.equalsIgnoreCase("particle styled page")
+  )
+    window.location.href = "https://anonymousparadox890.github.io/rahul-raj/Particle.html"
   else if (
     input.equalsIgnoreCase("insta") ||
     input.equalsIgnoreCase("insta styled page") ||
@@ -80,7 +87,7 @@ const openPage = () => {
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
-        Swal.fire('List\n <span style="color:A4DD86">Home\nApple\nInstagram</span>', '', 'success')
+        Swal.fire('<span style="color:A4DD86">Home\nApple\nInstagram\n</span><span style="color:red">Particle</span>', '', 'success')
       }
     })
   }
