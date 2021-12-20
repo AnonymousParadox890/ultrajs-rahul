@@ -8,7 +8,7 @@
 </head>
 
 <body>
-   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
   <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,38 +20,66 @@
   </head>
 
   <body>
-  <div id="beta">
-    <p>beta</p>
-  </div>
-  <input onkeyup="searchbar(event)" type="text" name="" id="inputab" value="" placeholder="Navigate Pages"/>
-  <button onclick="openPage()" id="submitab" type="submit">
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="40" height="40"
-viewBox="0 0 48 48"
-style=" fill:#000000;"><path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path><path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path><path fill="#37474F" d="M36.2 32.1H40.2V44.400000000000006H36.2z" transform="rotate(-45.001 38.24 38.24)"></path><path fill="#64B5F6" d="M20 7A13 13 0 1 0 20 33A13 13 0 1 0 20 7Z"></path><path fill="#BBDEFB" d="M26.9,14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2,1.2-6.9,3.2c-0.4,0.4-0.3,1.1,0.1,1.4c0.4,0.4,1.1,0.3,1.4-0.1C16,13.9,17.9,13,20,13s4,0.9,5.4,2.5c0.2,0.2,0.5,0.4,0.8,0.4c0.2,0,0.5-0.1,0.6-0.2C27.2,15.3,27.2,14.6,26.9,14.2z"></path></svg>
-  </button>
-  <br />
-  <div id="card-about">
-    <div id="card-aboutt">
+    <div id="beta">
+      <p>beta</p>
     </div>
-    <img id="stand" src="rastand.jpg" alt="" />
-    <h1><span id="animatediss">Rahul Raj</span></h1>
-    <div id="cardabbtt">
-      <h5 style="padding: 10px">Hi,</h5>
-      <h3 style="padding: 5px;font-weight:800"><span id="animatedis"></span></h3>
-      <h5 style="padding: 5px;">I'm an 🇮🇳 Indian designer who loves creating digital products.</h5>
+    <input onkeyup="searchbar(event)" type="text" name="" id="inputab" value="" placeholder="Navigate Pages" />
+    <button onclick="openPage()" id="submitab" type="submit">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48" style=" fill:#000000;">
+        <path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path>
+        <path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path>
+        <path fill="#37474F" d="M36.2 32.1H40.2V44.400000000000006H36.2z" transform="rotate(-45.001 38.24 38.24)"></path>
+        <path fill="#64B5F6" d="M20 7A13 13 0 1 0 20 33A13 13 0 1 0 20 7Z"></path>
+        <path fill="#BBDEFB" d="M26.9,14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2,1.2-6.9,3.2c-0.4,0.4-0.3,1.1,0.1,1.4c0.4,0.4,1.1,0.3,1.4-0.1C16,13.9,17.9,13,20,13s4,0.9,5.4,2.5c0.2,0.2,0.5,0.4,0.8,0.4c0.2,0,0.5-0.1,0.6-0.2C27.2,15.3,27.2,14.6,26.9,14.2z"></path>
+      </svg>
+    </button>
+    <br />
+    <button onclick="ChangeBackground()" id="changeBackground" type="submit">
+      <svg id="sun" style="fill:white" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 112.88" style="enable-background:new 0 0 122.88 112.88" xml:space="preserve">
+        <style type="text/css">
+          .st0 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+          }
+        </style>
+        <g>
+          <path class="st0" d="M14.29,0h94.3c7.86,0,14.29,6.43,14.29,14.29v84.3c0,7.86-6.43,14.29-14.29,14.29h-94.3 C6.43,112.88,0,106.45,0,98.59v-84.3C0,6.43,6.43,0,14.29,0L14.29,0z M43.01,28.18c-0.64-1.1-0.26-2.51,0.84-3.15 c1.1-0.64,2.51-0.26,3.15,0.84L49.97,31c0.64,1.1,0.26,2.51-0.84,3.15c-1.1,0.64-2.51,0.26-3.15-0.84L43.01,28.18L43.01,28.18 L43.01,28.18z M61.44,35.79c5.7,0,10.86,2.31,14.6,6.05c3.73,3.74,6.05,8.9,6.05,14.6c0,5.7-2.31,10.86-6.05,14.6 c-3.74,3.74-8.9,6.05-14.6,6.05c-5.7,0-10.86-2.31-14.6-6.05c-3.73-3.74-6.05-8.9-6.05-14.6c0-5.7,2.31-10.86,6.05-14.6 C50.58,38.1,55.74,35.79,61.44,35.79L61.44,35.79L61.44,35.79z M59.6,22.76c0-1.28,1.04-2.31,2.31-2.31c1.28,0,2.31,1.03,2.31,2.31 v5.92c0,1.28-1.03,2.31-2.31,2.31c-1.28,0-2.31-1.03-2.31-2.31V22.76L59.6,22.76L59.6,22.76z M76.7,26.36 c0.63-1.1,2.04-1.48,3.14-0.85c1.1,0.63,1.48,2.04,0.85,3.14l-2.96,5.13c-0.63,1.1-2.04,1.48-3.14,0.85 c-1.1-0.63-1.48-2.04-0.85-3.14L76.7,26.36L76.7,26.36L76.7,26.36z M89.69,38.01c1.1-0.64,2.51-0.26,3.15,0.84 c0.64,1.1,0.26,2.51-0.84,3.15l-5.13,2.96c-1.1,0.64-2.51,0.26-3.15-0.84c-0.64-1.1-0.26-2.51,0.84-3.15L89.69,38.01L89.69,38.01 L89.69,38.01z M95.12,54.6c1.28,0,2.31,1.04,2.31,2.31c0,1.28-1.03,2.31-2.31,2.31H89.2c-1.28,0-2.31-1.03-2.31-2.31 c0-1.28,1.03-2.31,2.31-2.31H95.12L95.12,54.6L95.12,54.6z M91.52,71.7c1.1,0.63,1.48,2.04,0.85,3.14 c-0.63,1.1-2.04,1.48-3.14,0.85l-5.13-2.96c-1.1-0.63-1.48-2.04-0.85-3.14c0.63-1.1,2.04-1.48,3.14-0.85L91.52,71.7L91.52,71.7 L91.52,71.7z M79.87,84.69c0.64,1.1,0.26,2.51-0.84,3.15c-1.1,0.64-2.51,0.26-3.15-0.84l-2.96-5.13c-0.64-1.1-0.26-2.51,0.84-3.15 c1.1-0.64,2.51-0.26,3.15,0.84L79.87,84.69L79.87,84.69L79.87,84.69z M63.28,90.12c0,1.28-1.04,2.31-2.31,2.31 c-1.28,0-2.31-1.03-2.31-2.31V84.2c0-1.28,1.03-2.31,2.31-2.31c1.28,0,2.31,1.03,2.31,2.31V90.12L63.28,90.12L63.28,90.12z M46.18,86.52c-0.63,1.1-2.04,1.48-3.14,0.85c-1.1-0.63-1.48-2.04-0.85-3.14l2.96-5.13c0.63-1.1,2.04-1.48,3.14-0.85 c1.1,0.63,1.48,2.04,0.85,3.14L46.18,86.52L46.18,86.52L46.18,86.52z M33.19,74.87c-1.1,0.64-2.51,0.26-3.15-0.84 c-0.64-1.1-0.26-2.51,0.84-3.15L36,67.91c1.1-0.64,2.51-0.26,3.15,0.84c0.64,1.1,0.26,2.51-0.84,3.15L33.19,74.87L33.19,74.87 L33.19,74.87z M27.76,58.28c-1.28,0-2.31-1.04-2.31-2.31s1.03-2.31,2.31-2.31h5.92c1.28,0,2.31,1.03,2.31,2.31 s-1.03,2.31-2.31,2.31H27.76L27.76,58.28L27.76,58.28z M31.36,41.18c-1.1-0.63-1.48-2.04-0.85-3.14c0.63-1.1,2.04-1.48,3.14-0.85 l5.13,2.96c1.1,0.63,1.48,2.04,0.85,3.14c-0.63,1.1-2.04,1.48-3.14,0.85L31.36,41.18L31.36,41.18L31.36,41.18z" />
+        </g>
+      </svg>
+      <svg id="moon" height="40px" width="40px" style="fill:black" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 112.88" style="enable-background:new 0 0 122.88 112.88" xml:space="preserve">
+        <style type="text/css">
+          .st0 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+          }
+        </style>
+        <g>
+          <path class="st0" d="M14.29,0h94.3c7.86,0,14.29,6.43,14.29,14.29v84.3c0,7.86-6.43,14.29-14.29,14.29h-94.3 C6.43,112.88,0,106.45,0,98.59v-84.3C0,6.43,6.43,0,14.29,0L14.29,0z M61.36,24.87c-7.69,4.45-12.87,12.77-12.87,22.3 c0,14.22,11.53,25.75,25.75,25.75c6.75,0,12.9-2.6,17.49-6.85c2.28-2.11,4.89-0.57,4.01,1.94c-4.81,13.82-17.95,23.73-33.41,23.73 c-19.54,0-35.38-15.84-35.38-35.38c0-18.72,14.61-34.1,33.1-35.23C63.47,20.93,64.35,23.14,61.36,24.87L61.36,24.87z" />
+        </g>
+      </svg>
+    </button>
+    <br />
+    <div id="card-about">
+      <div id="card-aboutt">
+      </div>
+      <img id="stand" src="rastand.jpg" alt="" />
+      <h1><span id="animatediss">Rahul Raj</span></h1>
+      <div id="cardabbtt">
+        <h5 style="padding: 10px">Hi,</h5>
+        <h3 style="padding: 5px;font-weight:800"><span id="animatedis"></span></h3>
+        <h5 style="padding: 5px;">I'm an 🇮🇳 Indian designer who loves creating digital products.</h5>
+      </div>
     </div>
-  </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js"></script>
     <script>
       var typed = new Typed('#animatedis', {
-      strings: ["I build value through design.","I build value through innovation."],
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true
+        strings: ["I build value through design.", "I build value through innovation."],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
       });
     </script>
     </div>

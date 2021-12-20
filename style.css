@@ -3,6 +3,9 @@ body {
   text-align: center;
   overflow-y: hidden;
 }
+body.light-mode {
+  background: white;
+}
 #beta{
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
   height:30px;
@@ -31,6 +34,9 @@ body {
   width:200px;
   border-radius:5px;
 }
+.light-mode #inputab{
+  color:black;
+}
 #submitab{
   position: relative;
   top:-40px;
@@ -45,6 +51,8 @@ body {
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   height:500px;
   width:100%;
+  position: relative;
+  top:-50px;
   border-radius:20px;
   text-align: center;
   align-items: center;
@@ -59,6 +67,9 @@ body {
   top:2%;
   border-radius:20px;
 }
+.light-mode #card-aboutt{
+  background: white;
+}
 #stand{
   height:70px;
   width:70px;
@@ -67,8 +78,11 @@ body {
   position: relative;
   top:-450px;
 }
+.light-mode #stand{
+  border: 1px solid black;
+}
 #animatediss{
-  position: relative;
+  position: fixed;
   top:-450px;
   color:white;
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
@@ -102,4 +116,24 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+#changeBackground{
+  background: transparent;
+  color:white;
+  height:40px;
+  width:40px;
+  outline: none;
+  border: none;
+  position: relative;
+  left:42%;
+  top:-83px;
+}
+#changeBackground #moon{
+  display: none;
+}
+.light-mode #changeBackground #moon{
+  display: list-item;
+}
+.light-mode #changeBackground #sun{
+  display: none;
 }
